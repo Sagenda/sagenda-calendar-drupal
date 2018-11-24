@@ -1,0 +1,12 @@
+sagenda.admin_config_system:
+  title: 'Sagenda Settings'
+  route_name: sagenda.admin_config_system
+  parent: system.admin_config
+  description: 'Configure Sagenda settings.'
+  weight: 10
+sagenda.settings:
+  title: 'Sagenda Settings'
+  parent: sagenda.admin_config_system
+  description: 'Configure Sagenda settings.'
+  route_name: sagenda.settings
+  weight: -10

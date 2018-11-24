@@ -1,0 +1,35 @@
+<?php
+
+// declare global variable
+define('SAGENDA_API_URL', 'https://sagenda.net/api/v3/');
+
+/**
+ * Implements hook_theme().
+ */
+function sagenda_theme($existing, $type, $theme, $path) {
+  return [
+    'sagenda_booking_calendar' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Callback to get Sagenda Calendar Config.
+ *
+ * @return mixed
+ */
+function get_sagenda_calendar_config() {
+  $sagenda_config = \Drupal::config('sagenda.settings');
+  $data['token'] = $sagenda_config->get('token');
+  $data['date'] = $sagenda_config->get('date');
+  $data['time'] = $sagenda_config->get('time');
+  $data['weekstartson'] = $sagenda_config->get('weekstartson');
+  $data['api_url'] = SAGENDA_API_URL;
+  $data['angular_path'] = '/drupal843/' . drupal_get_path('module', 'sagenda') . '/Angular/';
+  $data['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  return $data;
+}

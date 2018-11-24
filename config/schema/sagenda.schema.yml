@@ -1,0 +1,18 @@
+# Schema for the configuration files of the sagenda module.
+
+sagenda.settings:
+  type: config_object
+  label: 'Sagenda Settings'
+  mapping:
+    token:
+      type: string
+      label: 'Token'
+    date:
+      type: string
+      label: 'Date'
+    time:
+      type: string
+      label: 'Time'
+    weekstartson:
+      type: string
+      label: 'Week Starts On'
