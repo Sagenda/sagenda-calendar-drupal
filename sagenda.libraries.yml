@@ -1,13 +1,14 @@
 sagenda_booking_calendar:
   version: 1.0
   js:
-    Angular/main.js: {}
-    Angular/polyfills.js: {}
-    Angular/runtime.js: {}
+    angular/main.js: {}
+    angular/polyfills.js: {}
+    angular/runtime.js: {}
   css:
     theme:
       'https://unpkg.com/@angular/material@7.0.2/prebuilt-themes/indigo-pink.css': {type: external}
-      'Angular/styles.css': {}
+      'angular/styles.css': {}
+      'assets/vendor/bootstrap/bootstrap-theme-wrapper.css': {}
   dependencies:
     - core/jquery
     - core/drupal
