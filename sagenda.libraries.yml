@@ -9,6 +9,8 @@ sagenda_booking_calendar:
       'https://unpkg.com/@angular/material@7.0.2/prebuilt-themes/indigo-pink.css': {type: external}
       'angular/styles.css': {}
       'assets/vendor/bootstrap/bootstrap-theme-wrapper.css': {}
+      'assets/vendor/bootstrap/bootstrap-wrapper.css': {}
+      'assets/vendor/bootstrap/bootstrap-theme.css.map': {}
   dependencies:
     - core/jquery
     - core/drupal
