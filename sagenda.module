@@ -7,10 +7,6 @@ if( class_exists('Unirest\Exception') === false ) {
 
 // declare global variable
 define('SAGENDA_API_URL', 'https://sagenda.net/api/v3/');
-define('SAGENDA_MODULE_PATH', "./".drupal_get_path('module', 'sagenda'));
-
-
-// include_once( "./".drupal_get_path('module', 'sagenda').'/webservices/SagendaAPI.php' );
 
  /**
  * Implements hook_theme().
@@ -34,6 +30,8 @@ function get_sagenda_calendar_config() {
   $sagenda_config = \Drupal::config('sagenda.settings');
   $data['token'] = $sagenda_config->get('token');
 
+  print('URL = '.SAGENDA_MODULE_URL);
+
   try {
     $body = "grant_type=api_token&api_token=".$sagenda_config->get('token');
     $response = Unirest\Request::post(SAGENDA_API_URL."token",
@@ -46,14 +44,14 @@ function get_sagenda_calendar_config() {
 catch (Exception $e) {
       echo "Oups, I did it again : ".$e->getMessage();
     }
-    //print_r($response->body->access_token);
+    
   $data['token'] = $response->body->access_token;
 
   $data['date'] = $sagenda_config->get('date');
   $data['time'] = $sagenda_config->get('time');
   $data['weekstartson'] = $sagenda_config->get('weekstartson');
   $data['api_url'] = SAGENDA_API_URL;
-  $data['angular_path'] = SAGENDA_MODULE_PATH . '/angular/';
+  $data['angular_path'] = \Drupal::urlGenerator()->generateFromRoute('<front>', [], ['absolute' => TRUE]).drupal_get_path('module', 'sagenda') . '/angular/';
   $data['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   return $data;
