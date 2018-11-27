@@ -62,7 +62,7 @@ class SagendaConfig extends ConfigFormBase {
 
     $form['date'] = array(
       '#type' => 'textfield',
-      '#default_value' => !empty($settings->get('date')) ? $settings->get('date') : '',
+      '#default_value' => !empty($settings->get('date')) ? $settings->get('date') : 'DD-MMMM-YYYY',
       '#title' => t('Date'),
       '#required' => TRUE,
       '#description' => t('Date format should be DD-MMMM-YYYY'),
@@ -70,7 +70,7 @@ class SagendaConfig extends ConfigFormBase {
 
     $form['time'] = array(
       '#type' => 'textfield',
-      '#default_value' => !empty($settings->get('time')) ? $settings->get('time') : '',
+      '#default_value' => !empty($settings->get('time')) ? $settings->get('time') : 'HH:mm',
       '#title' => t('Time'),
       '#required' => TRUE,
       '#description' => t('Time format should be HH:mm'),
@@ -129,7 +129,9 @@ class SagendaConfig extends ConfigFormBase {
       }
       else {
         $config->set('connection', 'NOT CONNECTED');
-        drupal_set_message(t('@error', array('@error' => $result1->Message)), 'error');
+        if (!empty($result1->Message)) {
+          drupal_set_message(t('@error', array('@error' => $result1->Message)), 'error');
+        }
       }
     }
     else {
