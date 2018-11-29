@@ -1,11 +1,10 @@
 <?php
-
 namespace Drupal\sagenda\Controller;
 
-
-class SagendaController {
-
-  public function displayCalendar() {
+class SagendaController
+{
+  public function displayCalendar()
+  {
     $data = get_sagenda_calendar_config();
 
     return array(

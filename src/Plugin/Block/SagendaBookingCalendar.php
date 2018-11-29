@@ -14,12 +14,14 @@ use Drupal\Core\Language\LanguageManager;
  *   category = @Translation("Sagenda Booking Calendar"),
  * )
  */
-class SagendaBookingCalendar extends BlockBase {
+class SagendaBookingCalendar extends BlockBase
+{
 
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function build()
+  {
     $data = get_sagenda_calendar_config();
 
     return array(
