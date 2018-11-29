@@ -1,6 +1,9 @@
 # sagenda-drupal
 Sagenda's Calendar Drupal 8+ module
 
+Active development (new featues) : ✅
+Active support / maintenance / bugfixes : ✅ 
+
 ## Installation
 
 - Download and place the module in "modules" directory in Drupal's root folder.
