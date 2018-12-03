@@ -51,7 +51,9 @@ function get_sagenda_calendar_config()
   $data['time'] = $sagenda_config->get('time');
   $data['weekstartson'] = $sagenda_config->get('weekstartson');
   $data['api_url'] = SAGENDA_API_URL;
-  $data['angular_path'] = \Drupal::urlGenerator()->generateFromRoute('<front>', [], ['absolute' => true]) . drupal_get_path('module', 'sagenda') . '/angular/';
+  $path = \Drupal::urlGenerator()->generateFromRoute('<front>', [], ['absolute' => true, 'language' => $languages['en']]);
+  $module_path = drupal_get_path('module', 'sagenda');
+  $data['angular_path'] = substr($path, 0, strripos($path, "/")) . "/" . $module_path . '/angular/';
   $data['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   return $data;
