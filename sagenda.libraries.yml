@@ -1,9 +1,9 @@
 sagenda_booking_calendar:
   version: 0.3.0
   js:
-    angular/main.js: {}
     angular/polyfills.js: {}
     angular/runtime.js: {}
+    angular/main.js: {}
   css:
     theme:
       'https://unpkg.com/@angular/material@7.0.2/prebuilt-themes/indigo-pink.css': {type: external}
