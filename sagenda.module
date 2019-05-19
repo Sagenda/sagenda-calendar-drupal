@@ -46,6 +46,11 @@ function get_sagenda_calendar_config()
     echo "Oups, I did it again : " . $e->getMessage();
   }
 
+  $data['defaultView'] = $sagenda_config->get('defaultView');
+  $data['removeMonthViewButton'] = convertBoolean($sagenda_config->get('removeMonthViewButton'));
+  $data['removeWeekViewButton'] = convertBoolean($sagenda_config->get('removeWeekViewButton'));
+  $data['removeDayViewButton'] = convertBoolean($sagenda_config->get('removeDayViewButton'));
+
   $data['token'] = $response->body->access_token;
   $data['date'] = $sagenda_config->get('date');
   $data['time'] = $sagenda_config->get('time');
@@ -57,4 +62,12 @@ function get_sagenda_calendar_config()
   $data['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   return $data;
+}
+
+function convertBoolean($value)
+{
+  if ($value === 0) {
+    return false;
+  }
+  return true;
 }

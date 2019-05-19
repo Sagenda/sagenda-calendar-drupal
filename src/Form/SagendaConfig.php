@@ -98,6 +98,38 @@ class SagendaConfig extends ConfigFormBase
       '#default_value' => !empty($settings->get('weekstartson')) ? $settings->get('weekstartson') : '',
     );
 
+    $defaultView = [
+      'month' => t('Month'),
+      'week' => t('Week'),
+      'day' => t('Day'),
+    ];
+    $form['defaultView'] = array(
+      '#type' => 'select',
+      '#title' => t('Default View'),
+      '#options' => $defaultView,
+      '#default_value' => !empty($settings->get('defaultView')) ? $settings->get('defaultView') : 'month',
+    );
+
+    $form['removeMonthViewButton'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Remove Month view button'),
+      '#description' => t('Activate/remove Month view button'),
+    );
+
+    $form['removeWeekViewButton'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => !empty($settings->get('removeWeekViewButton')) ? $settings->get('removeWeekViewButton') : 'false',
+      '#title' => t('Remove Week view button'),
+      '#description' => t('Activate/remove Week view button'),
+    );
+
+    $form['removeDayViewButton'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => !empty($settings->get('removeDayViewButton')) ? $settings->get('removeDayViewButton') : 'false',
+      '#title' => t('Remove Day view button'),
+      '#description' => t('Activate/remove Day view button'),
+    );
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -120,6 +152,10 @@ class SagendaConfig extends ConfigFormBase
 
     $config
       ->set('token', $auth_token)
+      ->set('defaultView', $form_state->getValue('defaultView'))
+      ->set('removeMonthViewButton', $form_state->getValue('removeMonthViewButton'))
+      ->set('removeWeekViewButton', $form_state->getValue('removeWeekViewButton'))
+      ->set('removeDayViewButton', $form_state->getValue('removeDayViewButton'))
       ->set('date', $form_state->getValue('date'))
       ->set('time', $form_state->getValue('time'))
       ->set('weekstartson', $form_state->getValue('weekstartson'));
@@ -149,5 +185,4 @@ class SagendaConfig extends ConfigFormBase
 
     parent::submitForm($form, $form_state);
   }
-
 }
