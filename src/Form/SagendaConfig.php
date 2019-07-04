@@ -62,7 +62,7 @@ class SagendaConfig extends ConfigFormBase
     $form['token'] = array(
       '#type' => 'textfield',
       '#default_value' => !empty($settings->get('token')) ? $settings->get('token') : '',
-      '#title' => t('Token'),
+      '#title' => t('Authentication code (Token)'),
       '#required' => true,
     );
 
