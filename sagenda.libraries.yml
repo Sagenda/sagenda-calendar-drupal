@@ -6,7 +6,7 @@ sagenda_booking_calendar:
     angular/main.js: {}
   css:
     theme:
-      'https://unpkg.com/@angular/material@8.1.4/prebuilt-themes/indigo-pink.css': {type: external}
+      'https://unpkg.com/@angular/material@8.2.3/prebuilt-themes/indigo-pink.css': {type: external}
       'angular/styles.css': {}
       'assets/vendor/bootstrap/bootstrap-theme-wrapper.css': {}
       'assets/vendor/bootstrap/bootstrap-wrapper.css': {}
