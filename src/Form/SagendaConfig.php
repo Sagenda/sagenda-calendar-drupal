@@ -161,7 +161,7 @@ class SagendaConfig extends ConfigFormBase
       ->set('weekstartson', $form_state->getValue('weekstartson'));
 
     if ($auth_token) {
-      $ch = curl_init(API_URL . 'ValidateAccount/' . $auth_token);
+      $ch = curl_init(SAGENDA_API_URL . 'ValidateAccount/' . $auth_token);
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       $result = curl_exec($ch);

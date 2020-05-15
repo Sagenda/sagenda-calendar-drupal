@@ -1,4 +1,5 @@
 <?php
+
 use Unirest;
 
 if (class_exists('Unirest\Exception') === false) {
@@ -32,7 +33,7 @@ function get_sagenda_calendar_config()
   $sagenda_config = \Drupal::config('sagenda.settings');
   $data['token'] = $sagenda_config->get('token');
   $languages = \Drupal::languageManager()->getLanguages();
-  
+
   try {
     $body = "grant_type=api_token&api_token=" . $sagenda_config->get('token');
     $response = Unirest\Request::post(
