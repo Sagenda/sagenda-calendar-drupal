@@ -52,6 +52,7 @@ function get_sagenda_calendar_config()
   $data['removeMonthViewButton'] = convertBoolean($sagenda_config->get('removeMonthViewButton'));
   $data['removeWeekViewButton'] = convertBoolean($sagenda_config->get('removeWeekViewButton'));
   $data['removeDayViewButton'] = convertBoolean($sagenda_config->get('removeDayViewButton'));
+  $data['removeAgendaViewButton'] = convertBoolean($sagenda_config->get('removeAgendaViewButton'));
 
   $data['token'] = $response->body->access_token;
   $data['date'] = $sagenda_config->get('date');
@@ -69,7 +70,7 @@ function get_sagenda_calendar_config()
 function convertBoolean($value)
 {
   if ($value === 0) {
-    return false;
+    return 'false';
   }
-  return true;
+  return 'true';
 }

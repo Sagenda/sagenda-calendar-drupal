@@ -102,6 +102,7 @@ class SagendaConfig extends ConfigFormBase
       'month' => t('Month'),
       'week' => t('Week'),
       'day' => t('Day'),
+      'agenda' => t('Agenda'),
     ];
     $form['defaultView'] = array(
       '#type' => 'select',
@@ -112,6 +113,7 @@ class SagendaConfig extends ConfigFormBase
 
     $form['removeMonthViewButton'] = array(
       '#type' => 'checkbox',
+      '#default_value' => !empty($settings->get('removeMonthViewButton')) ? $settings->get('removeMonthViewButton') : 'false',
       '#title' => t('Remove Month view button'),
       '#description' => t('Activate/remove Month view button'),
     );
@@ -128,6 +130,13 @@ class SagendaConfig extends ConfigFormBase
       '#default_value' => !empty($settings->get('removeDayViewButton')) ? $settings->get('removeDayViewButton') : 'false',
       '#title' => t('Remove Day view button'),
       '#description' => t('Activate/remove Day view button'),
+    );
+
+    $form['removeAgendaViewButton'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => !empty($settings->get('removeAgendaViewButton')) ? $settings->get('removeAgendaViewButton') : 'false',
+      '#title' => t('Remove Agenda view button'),
+      '#description' => t('Activate/remove Agenda view button'),
     );
 
     return parent::buildForm($form, $form_state);
@@ -156,6 +165,7 @@ class SagendaConfig extends ConfigFormBase
       ->set('removeMonthViewButton', $form_state->getValue('removeMonthViewButton'))
       ->set('removeWeekViewButton', $form_state->getValue('removeWeekViewButton'))
       ->set('removeDayViewButton', $form_state->getValue('removeDayViewButton'))
+      ->set('removeAgendaViewButton', $form_state->getValue('removeAgendaViewButton'))
       ->set('date', $form_state->getValue('date'))
       ->set('time', $form_state->getValue('time'))
       ->set('weekstartson', $form_state->getValue('weekstartson'));
