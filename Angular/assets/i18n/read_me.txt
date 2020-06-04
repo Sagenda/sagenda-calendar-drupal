@@ -1,1 +1,0 @@
-en-US.json is just there to avoid "file not found" error when culture is US, but translations fallback on en.jsons
