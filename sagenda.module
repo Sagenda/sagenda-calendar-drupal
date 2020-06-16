@@ -33,8 +33,8 @@ function get_sagenda_calendar_config()
   $sagenda_config = \Drupal::config('sagenda.settings');
   $data['token'] = $sagenda_config->get('token');
   $languages = \Drupal::languageManager()->getLanguages();
-
-  try {
+ 
+ /*  try {
     $body = "grant_type=api_token&api_token=" . $sagenda_config->get('token');
     $response = Unirest\Request::post(
       SAGENDA_API_URL . "token",
@@ -46,7 +46,7 @@ function get_sagenda_calendar_config()
     );
   } catch (Exception $e) {
     echo "Oups, I did it again : " . $e->getMessage();
-  }
+  } */
 
   $data['defaultView'] = $sagenda_config->get('defaultView');
   $data['removeMonthViewButton'] = convertBoolean($sagenda_config->get('removeMonthViewButton'));
@@ -54,7 +54,7 @@ function get_sagenda_calendar_config()
   $data['removeDayViewButton'] = convertBoolean($sagenda_config->get('removeDayViewButton'));
   $data['removeAgendaViewButton'] = convertBoolean($sagenda_config->get('removeAgendaViewButton'));
 
-  $data['token'] = $response->body->access_token;
+  // $data['token'] = $response->body->access_token;
   $data['date'] = $sagenda_config->get('date');
   $data['time'] = $sagenda_config->get('time');
   $data['weekstartson'] = $sagenda_config->get('weekstartson');

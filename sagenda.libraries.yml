@@ -1,5 +1,5 @@
 sagenda_booking_calendar:
-  version: 2.0.2
+  version: 2.0.3
   js:
     angular/polyfills.js: {}
     angular/polyfills-es5.js: {}
