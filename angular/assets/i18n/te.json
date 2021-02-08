@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "ఈ బుక్ చేయదగిన పారామితి ఐడెంటిఫైయర్ మీ బుక్ చేయదగిన వస్తువుతో అనుసంధానించబడలేదు!",
 		"COUPON_CODE_INVALID": "కూపన్ కోడ్ చెల్లదు",
 		"DIFFERENT_CURRENCIES": "వేర్వేరు చెల్లింపు కరెన్సీలు ఉన్న బహుళ ఈవెంట్లను మీరు బుక్ చేసుకోలేరు.",
+		"EVENT_ALREADY_SELECTED": "ఈ ఈవెంట్ ఇప్పటికే ఎంచుకోబడింది.",
 		"MAXIMUM_QUOTA": "మీరు {{value}} స్లాట్ల కంటే ఎక్కువ బుక్ చేయలేరు",
 		"MINIMUM_QUOTA": "మీరు కనీసం {{value}} స్లాట్లు బుక్ చేయాలి",
 		"NO_BOOKABLE_ITEM": "దయచేసి మీ సగ్జెండా ఖాతాలో కనీసం 1 బుక్మార్క్ అంశాన్ని సృష్టించండి!",
@@ -31,6 +32,7 @@
 		"DATE": "తేదీ",
 		"STATE_BOOKED": "బుక్",
 		"STATE_FREE": "ఓపెన్ రిజర్వేషన్(లు)",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "పాక్షికంగా బుక్ చేయబడింది",
 		"UNBLOCK": "అనుమతించు"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "లాగిన్",
 		"LOGOUT": "లాగౌట్",
 		"MENU": "మెనూ",
+		"NUMBER_OF_SLOTS": "స్లాట్ (ల) సంఖ్య",
 		"OK": "అలాగే",
 		"PWD": "పాస్వర్డ్",
 		"RESERVATION": "రిజర్వేషన్",
-		"RESERVATIONS": "రిజర్వేషన్లు"
+		"RESERVATIONS": "రిజర్వేషన్లు",
+		"RESERVATION_STATUS": "రిజర్వేషన్ స్థితి"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "భాగస్వామిని జోడించండి",

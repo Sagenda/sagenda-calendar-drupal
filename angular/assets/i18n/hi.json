@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "यह बुक करने योग्य पैरामीटर पहचानकर्ता आपके किसी बुक किए गए आइटम से लिंक नहीं है!",
 		"COUPON_CODE_INVALID": "कूपन कोड अमान्य है",
 		"DIFFERENT_CURRENCIES": "आप कई घटनाओं को बुक नहीं कर सकते हैं जिनमें विभिन्न भुगतान मुद्राएं हैं।",
+		"EVENT_ALREADY_SELECTED": "यह ईवेंट पहले से चयनित है।",
 		"MAXIMUM_QUOTA": "आप {{value}} से अधिक स्लॉट बुक नहीं कर सकते",
 		"MINIMUM_QUOTA": "आपको न्यूनतम {{value}} स्लॉट बुक करने की आवश्यकता है",
 		"NO_BOOKABLE_ITEM": "कृपया अपने Sagenda के खाते में कम से कम 1 बुक करने योग्य आइटम बनाएं",
@@ -31,6 +32,7 @@
 		"DATE": "दिनांक",
 		"STATE_BOOKED": "बुक्ड",
 		"STATE_FREE": "खुला आरक्षण",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "आंशिक रूप से बुक किया गया",
 		"UNBLOCK": "अनब्लॉक"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "लॉग इन करें",
 		"LOGOUT": "लोग आउट",
 		"MENU": "मेन्यू",
+		"NUMBER_OF_SLOTS": "स्लॉट की संख्या",
 		"OK": "ठीक",
 		"PWD": "पारण शब्द",
 		"RESERVATION": "आरक्षण",
-		"RESERVATIONS": "आरक्षण"
+		"RESERVATIONS": "आरक्षण",
+		"RESERVATION_STATUS": "आरक्षण की स्थिति"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "प्रतिभागी जोड़ें",

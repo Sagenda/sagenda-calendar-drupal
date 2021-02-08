@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "Този идентификатор на параметър за букиране не е свързан с един от вашите букмейкър елементи!",
 		"COUPON_CODE_INVALID": "Кодът на купона е невалиден",
 		"DIFFERENT_CURRENCIES": "Не можете да резервирате няколко събития, които изискват различни валути за плащане",
+		"EVENT_ALREADY_SELECTED": "Това събитие вече е избрано.",
 		"MAXIMUM_QUOTA": "Не можете да резервирате повече от {{value}} слота",
 		"MINIMUM_QUOTA": "Трябва да резервирате минимум {{value}} слота",
 		"NO_BOOKABLE_ITEM": "Моля създайте поне едно Събитие в акаунта си в Sagenda!",
@@ -31,6 +32,7 @@
 		"DATE": "Дата",
 		"STATE_BOOKED": "Резервирано",
 		"STATE_FREE": "Отворена резервация(и)",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "Частично резервиран",
 		"UNBLOCK": "Отблокиране"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "Влизам",
 		"LOGOUT": "Излез от профила си",
 		"MENU": "Меню",
+		"NUMBER_OF_SLOTS": "Брой слотове",
 		"OK": "Добре",
 		"PWD": "парола",
 		"RESERVATION": "резервация",
-		"RESERVATIONS": "рЕЗЕРВАЦИИ"
+		"RESERVATIONS": "рЕЗЕРВАЦИИ",
+		"RESERVATION_STATUS": "Статус на резервацията"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "Добавяне на член",

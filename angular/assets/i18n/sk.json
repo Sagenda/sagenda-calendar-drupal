@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "Tento identifikátor parametra, ktorý je možné rezervovať, nie je prepojený s jednou z vašich položiek, ktoré je možné rezervovať!",
 		"COUPON_CODE_INVALID": "Kód kupónu je neplatný",
 		"DIFFERENT_CURRENCIES": "Nemôžete rezervovať viac udalostí, ktoré majú rôzne platobné meny.",
+		"EVENT_ALREADY_SELECTED": "Táto udalosť je už vybratá.",
 		"MAXIMUM_QUOTA": "Nemôžete rezervovať viac ako {{value}} automatov",
 		"MINIMUM_QUOTA": "Musíte rezervovať minimálne {{value}} automatov",
 		"NO_BOOKABLE_ITEM": "Vytvorte si aspoň 1 rezervovateľnú položku vo svojom účte Sagenda!",
@@ -31,6 +32,7 @@
 		"DATE": "Dátum",
 		"STATE_BOOKED": "Rezervovaný",
 		"STATE_FREE": "Otvorená rezervácia",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "čiastočne rezervované",
 		"UNBLOCK": "odblokovanie"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "Prihlásiť sa",
 		"LOGOUT": "Odhlásiť sa",
 		"MENU": "ponuka",
+		"NUMBER_OF_SLOTS": "Počet slotov",
 		"OK": "OK",
 		"PWD": "heslo",
 		"RESERVATION": "Výhrada",
-		"RESERVATIONS": "Výhrady"
+		"RESERVATIONS": "Výhrady",
+		"RESERVATION_STATUS": "Stav rezervácie"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "Pridať účastníka",

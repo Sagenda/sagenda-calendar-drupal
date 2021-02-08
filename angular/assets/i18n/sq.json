@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "Ky identifikues i prerjes së parametrave nuk është i lidhur me një nga artikujt tuaj të prenotueshëm!",
 		"COUPON_CODE_INVALID": "Kodi i kuponit është i pavlefshëm",
 		"DIFFERENT_CURRENCIES": "Ju nuk mund të rezervoni ngjarje të shumta që kanë monedha të ndryshme të pagesave.",
+		"EVENT_ALREADY_SELECTED": "Kjo ngjarje është zgjedhur tashmë.",
 		"MAXIMUM_QUOTA": "Ju nuk mund të rezervoni më shumë se {{value}} lojëra elektronike",
 		"MINIMUM_QUOTA": "Ju duhet të rezervoni një minimum prej {{value}} lojëra elektronike",
 		"NO_BOOKABLE_ITEM": "Ju lutemi të krijoni të paktën 1 artikull të rezervueshëm në llogarinë tuaj të Sagenda!",
@@ -31,6 +32,7 @@
 		"DATE": "Data",
 		"STATE_BOOKED": "i rezervuar",
 		"STATE_FREE": "Rezervime të hapura",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "Rezervuar pjesërisht",
 		"UNBLOCK": "Hap"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "Hyrje",
 		"LOGOUT": "Shkyç",
 		"MENU": "Menu",
+		"NUMBER_OF_SLOTS": "Numri i foleve (sve)",
 		"OK": "Në rregull",
 		"PWD": "Fjalëkalim",
 		"RESERVATION": "Rezervë",
-		"RESERVATIONS": "Rezervimet"
+		"RESERVATIONS": "Rezervimet",
+		"RESERVATION_STATUS": "Statusi i rezervimit"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "Shto Pjesëmarrësin",

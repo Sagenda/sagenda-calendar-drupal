@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "معرف المعلمة القابل للحجز غير مرتبط بأحد العناصر القابلة للحجز!",
 		"COUPON_CODE_INVALID": "رمز القسيمة غير صالح",
 		"DIFFERENT_CURRENCIES": "لا يمكنك حجز العديد من الأحداث التي لها عملات دفع مختلفة.",
+		"EVENT_ALREADY_SELECTED": "تم تحديد هذا الحدث بالفعل.",
 		"MAXIMUM_QUOTA": "لا يمكنك حجز أكثر من {{value}} فتحات",
 		"MINIMUM_QUOTA": "تحتاج إلى حجز ما لا يقل عن {{value}} فتحات",
 		"NO_BOOKABLE_ITEM": "الرجاء إنشاء عنصر قابل للحجز على الأقل في حساب Sagenda الخاص بك!",
@@ -31,6 +32,7 @@
 		"DATE": "يوم",
 		"STATE_BOOKED": "حجز",
 		"STATE_FREE": "فتح الحجز (الحجوزات)",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "تم الحجز جزئيًا",
 		"UNBLOCK": "رفع الحظر"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "تسجيل الدخول",
 		"LOGOUT": "الخروج",
 		"MENU": "قائمة طعام",
+		"NUMBER_OF_SLOTS": "عدد الفتحات",
 		"OK": "حسناً",
 		"PWD": "كلمه السر",
 		"RESERVATION": "حجز",
-		"RESERVATIONS": "الحجز"
+		"RESERVATIONS": "الحجز",
+		"RESERVATION_STATUS": "حالة الحجز"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "إضافة عضو",

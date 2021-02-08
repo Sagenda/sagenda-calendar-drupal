@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "Seda broneeritavat parameetri identifikaatorit ei seostata ühe teie broneeritava üksusega!",
 		"COUPON_CODE_INVALID": "Coupon Code Invalid",
 		"DIFFERENT_CURRENCIES": "Te ei saa broneerida mitut sündmust, millel on erinevad maksevaluutad.",
+		"EVENT_ALREADY_SELECTED": "See sündmus on juba valitud.",
 		"MAXIMUM_QUOTA": "Te ei saa broneerida rohkem kui {{value}}",
 		"MINIMUM_QUOTA": "Peate broneerima vähemalt {{value}}",
 		"NO_BOOKABLE_ITEM": "Palun looge oma Sagenda kontole vähemalt 1 broneeritav toode!",
@@ -31,6 +32,7 @@
 		"DATE": "Kuupäev",
 		"STATE_BOOKED": "Broneeritud",
 		"STATE_FREE": "Avatud broneering(ud)",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "Poolenesti broneeritud",
 		"UNBLOCK": "Blokeeringu tühistamine"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "Logi sisse",
 		"LOGOUT": "Logi välja",
 		"MENU": "Menü",
+		"NUMBER_OF_SLOTS": "Pesa (de) arv",
 		"OK": "Korras",
 		"PWD": "Parool",
 		"RESERVATION": "Broneerimine",
-		"RESERVATIONS": "Reservatsioonid"
+		"RESERVATIONS": "Reservatsioonid",
+		"RESERVATION_STATUS": "Broneeringu olek"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "Lisage kaas broneerijat",

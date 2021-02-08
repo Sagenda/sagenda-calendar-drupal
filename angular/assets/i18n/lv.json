@@ -17,6 +17,7 @@
 		"BOOKABLE_ITEM_ID_PARAM_NOT_FOUND": "Šis rezervējamā parametra identifikators nav saistīts ar vienu no jūsu rezervējamiem vienumiem.",
 		"COUPON_CODE_INVALID": "Kupona kods nav derīgs",
 		"DIFFERENT_CURRENCIES": "Jūs nevarat rezervēt vairākus notikumus, kuriem ir dažādas maksājumu valūtas.",
+		"EVENT_ALREADY_SELECTED": "Šis notikums jau ir atlasīts.",
 		"MAXIMUM_QUOTA": "Nevar rezervēt vairāk par {{value}} slotiem",
 		"MINIMUM_QUOTA": "Jārezervē vismaz {{value}} sloti",
 		"NO_BOOKABLE_ITEM": "Lūdzu izveidojiet vismaz 1 rezervējumu objektu Jūsu Sagenda's kontā!",
@@ -31,6 +32,7 @@
 		"DATE": "Datums",
 		"STATE_BOOKED": "Rezervēts",
 		"STATE_FREE": "Atklāta rezervācija",
+		"STATE_FREE_OPEN": "",
 		"STATE_PARTIALLY_BOOKED": "Daļēji rezervēts",
 		"UNBLOCK": "Atbloķēt"
 	},
@@ -77,10 +79,12 @@
 		"LOGIN": "Lietotājvārds",
 		"LOGOUT": "Izlogoties",
 		"MENU": "Izvelne",
+		"NUMBER_OF_SLOTS": "Slota (-u) skaits",
 		"OK": "Labi",
 		"PWD": "Parole",
 		"RESERVATION": "Rezervēšana",
-		"RESERVATIONS": "Atrunas"
+		"RESERVATIONS": "Atrunas",
+		"RESERVATION_STATUS": "Rezervācijas statuss"
 	},
 	"SUBSCRIPTION": {
 		"ADD_MEMBER": "Pievienot Dalībnieku",
