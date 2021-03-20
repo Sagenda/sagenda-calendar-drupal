@@ -13,5 +13,12 @@
     window.sagendaDateFormat = '{{ data.date }}';
     window.sagendaTimeFormat = '{{ data.time }}';
     window.baseUrl = '{{ data.api_url }}';
-    window.sagendaAngularPath = '{{ data.angular_path }}';ﬂ
+    window.sagendaAngularPath = '{{ data.angular_path }}';
+    	//added this because of different scroll behaviour on Mac and Windows
+	if(window.navigator.userAgent.indexOf("Mac") === -1){
+		let link = document.createElement('link'); 
+		link.rel = 'stylesheet';  
+		link.href = '{{ data.angular_path }}/scroll.css'; 
+		document.getElementsByTagName("head")[0].appendChild(link);
+	}
 </script>
