@@ -1,6 +1,6 @@
 name: Sagenda Booking Calendar
 type: module
-description: 'Calendar allowing your customer to book appointment for Drupal 8.x'
+description: 'Calendar allowing your customer to book appointment for Drupal 8.x - 9.x'
 core: 8.x
-
+core_version_requirement: ^8 || ^9
 configure: sagenda.settings
